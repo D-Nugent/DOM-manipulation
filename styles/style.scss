@@ -1,0 +1,35 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+}
+
+main {
+    padding: 2vh 10vw;
+}
+
+.navigation {
+    background-color: aliceblue;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid darkblue;
+    
+    &__bar {
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+        width: 15vw;
+    }
+
+    &__links {
+        list-style: none;
+        color: darkblue;
+        font-weight: 600;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
