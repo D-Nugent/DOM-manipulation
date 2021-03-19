@@ -29,4 +29,17 @@ main {
 }
 .navigation__links:hover {
   cursor: pointer;
+}
+
+.todo__list {
+  width: 60%;
+}
+.todo__list-item {
+  list-style: circle;
+}
+.todo__priority {
+  color: green;
+}
+.todo__priority--urgent {
+  color: crimson;
 }/*# sourceMappingURL=style.css.map */

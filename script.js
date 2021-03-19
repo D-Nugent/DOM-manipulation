@@ -13,7 +13,7 @@ const thingsToDo = [
     },
     {
       name: 'Teach Mandohort',
-      priority: 'urgent!',
+      priority: 'Urgent!',
     },
     {
       name: 'Hang Shelves',
@@ -21,7 +21,7 @@ const thingsToDo = [
     },
     {
       name: 'Drink Tea (or Beer)',
-      priority: 'urgent!',
+      priority: 'Urgent!',
     }
 ];
 const extraThingToDo = 
@@ -38,10 +38,13 @@ function showThingsToDo(todoArray) {
         const toDoItem = document.createElement(`li`);
         toDoItem.classList.add('todo__list-item');
         const toDoItemName = document.createElement('h4');
-        toDoItemName.classList.add('todo__list-item');
+        toDoItemName.classList.add('todo__name');
         toDoItemName.innerText = task.name;
         const toDoItemPriority = document.createElement('p');
-        toDoItemPriority.classList.add('todo__list-item');
+        toDoItemPriority.classList.add('todo__priority');
+        if(task.priority === 'Urgent!'){
+            toDoItemPriority.classList.add('todo__priority--urgent')
+        };
         toDoItemPriority.innerText = task.priority;
         selectedToDo.appendChild(toDoItem);
         toDoItem.appendChild(toDoItemName);

@@ -33,3 +33,19 @@ main {
         }
     }
 }
+
+.todo{
+    &__list{
+        width: 60%;
+        &-item{
+            list-style: circle;
+        }
+    }
+    &__priority{
+        color: green;
+
+        &--urgent{
+            color:crimson;
+        }
+    }
+}
